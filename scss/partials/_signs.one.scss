@@ -1,0 +1,70 @@
+.sign-box {
+  height: 40vw;
+  width: 40vw;
+  margin-top: 7.5vh;
+  box-shadow: 2px 2px 2px #707070 inset, -2px -2px 2px #707070 inset;
+  border: 3px #AFAFAF solid;
+  border-radius: 5px;
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
+}
+.weather {
+  overflow: hidden;
+  height: 27%;
+}
+.weather-iframe {
+  position: relative;
+  top: -35px;
+}
+.events {
+  height: 59%;
+  overflow: hidden;
+}
+.news {
+  height: 14%;
+}
+.time {
+  padding: 20px;
+}
+.one {
+  background-color: $gainsboro;
+}.two {
+   background-color: $primary-color;
+ }
+
+@media screen and (orientation:landscape) {
+  .sign-box {
+    &:first-of-type {
+      margin-right: 3.75vh;
+    }
+    &:last-of-type {
+      margin-left: 3.75vh;
+    }
+  }
+} @media screen and (orientation:portrait) {
+  .sign-box {
+    height: 42.5vh;
+    width: 42.5vh;
+    margin-top: 5vh;
+  }
+}
+a {
+  font-size: 1.5em;
+  color: #000;
+  &:after {
+    content: '\A';
+    white-space: pre;
+  }
+}
+li p {
+  line-height: 1;
+  margin-bottom: 0;
+  padding: 4px;
+}
+li {
+  list-style-type: none;
+  background: $iron;
+  &:nth-child(odd) {background: $gainsboro;}
+}

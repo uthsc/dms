@@ -1,0 +1,1 @@
+<?php readfile("http://news.uthsc.edu/news-html/redesign-news-featured.php"); ?>
