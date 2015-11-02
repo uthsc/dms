@@ -1,0 +1,7 @@
+{
+  "name": "foundation-libsass-template",
+  "dependencies": {
+    "foundation": "zurb/bower-foundation",
+    "moment": "~2.10.6"
+  }
+}
